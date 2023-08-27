@@ -1,3 +1,9 @@
+.DC_Store
+*.sh
+server
+client
+a.out
+
 # Prerequisites
 *.d
 

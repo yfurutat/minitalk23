@@ -1,4 +1,4 @@
-#include "minitalk.h"
+#include "../minitalk.h"
 
 //25L
 void	handle_error(int err_id)

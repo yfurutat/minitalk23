@@ -1,4 +1,4 @@
-#include "minitalk.h"
+#include "../minitalk.h"
 
 #define POSITIVE (1)
 #define NEGATIVE (-1)

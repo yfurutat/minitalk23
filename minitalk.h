@@ -8,14 +8,14 @@
 # include <string.h>
 
 //DELETE before committing
-# include <stdio.h>
+// # include <stdio.h>
 
 // #  define PID_MAX (32767)
 # ifndef PID_MAX
 #  define PID_MAX (99999)
 # endif
 # ifndef SLP_US
-#  define SLP_US (300)
+#  define SLP_US (100)
 # endif
 # define NO (0)
 # define EMPTY (0)
@@ -35,12 +35,10 @@ typedef enum e_result {
 }	t_res;
 
 void	handle_error(int err_id);
-int		ft_atoi(const char *from_ascii);
 // void	ft_putchar_fd(char c, int fd);
 ssize_t	ft_putchar_fd(char c, int fd);
-ssize_t	announce_pid(pid_t pid);
-// void	ft_putpid(pid_t n, int fd);
 ssize_t	ft_putstr_id(char *str, int id);
+int		ft_atoi(const char *from_ascii);
 size_t	ft_strlen(char *str);
 int		ft_isspace(int chr);
 int		ft_isprint(int chr);
