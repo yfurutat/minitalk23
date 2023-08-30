@@ -39,8 +39,8 @@ commit	:
 	git add $(S_SRC) $(C_SRC) $(UTL) $(HFILE) Makefile | echo "\n"
 	git commit -m "$(COM_MSG)" | echo "\n"
 	git status
-	echo "\n"
-	@echo '[git push] to complete\n'
+	@echo "\n"
+	@echo '[git push] to complete' | echo '\n'
 
 .PHONY	=	all server client clean fclean re \
 	files commit rdall rdre rdserver rdclient 
