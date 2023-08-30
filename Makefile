@@ -9,7 +9,7 @@ RM		:=	rm -rfv
 US		:=	300
 PD		:=	32767
 HFILE	:=	minitalk.h
-COM_MSG=$'\n commit through Makefile \n'
+COM_MSG	:=	commit through Makefile
 
 all		:	server client
 server	:
