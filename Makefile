@@ -40,7 +40,8 @@ commit	:
 	git commit -m "$(COM_MSG)" | echo "\n"
 	git status
 	@echo "\n"
-	@echo '[git push] to complete' | echo '\n'
+	@echo '[git push] to complete'
+	@echo '\n'
 
 .PHONY	=	all server client clean fclean re \
 	files commit rdall rdre rdserver rdclient 
