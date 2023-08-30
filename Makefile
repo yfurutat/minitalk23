@@ -35,9 +35,9 @@ files	:
 	@touch $(HFILE) $(S_SRC) $(C_SRC) $(UTL)
 
 commit	:
-	git status
+	@git status | echo "\n"
 	git add $(S_SRC) $(C_SRC) $(UTL) $(HFILE) Makefile
-	@git commit -m "$(COM_MSG)" | echo "\n"
+	git commit -m "$(COM_MSG)" | echo "\n"
 	git status
 	@echo '[git push] to complete'
 
