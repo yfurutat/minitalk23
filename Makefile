@@ -41,7 +41,7 @@ commit	:
 	git status
 	@echo "\n"
 	@echo '[git push] to complete'
-	@echo '\n'
+	@echo "\n"
 
 .PHONY	=	all server client clean fclean re \
 	files commit rdall rdre rdserver rdclient 
