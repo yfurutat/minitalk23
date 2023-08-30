@@ -36,7 +36,7 @@ files	:
 
 commit	:
 	git status
-	git add .
+	git add $(S_SRC) $(C_SRC) utils $(UTL) Makefile
 	git commit -m "commit through Makefile"
 	git status
 	echo '[git push] to complete'
@@ -44,7 +44,7 @@ commit	:
 .PHONY	=	all server client clean fclean re \
 	files commit rdall rdre rdserver rdclient 
 
-#	git add $(S_SRC) $(C_SRC) utils $(UTL) Makefile
+#	git add .
 #	@touch error.c util.c outputs.c ft_atoi.c 
 #	@mkdir utils
 #	@mv * utils
