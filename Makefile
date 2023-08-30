@@ -38,7 +38,6 @@ commit	:
 	git status
 	@echo "\n"
 	git add $(S_SRC) $(C_SRC) $(UTL) $(HFILE) Makefile
-	@echo "\n"
 	@git commit -m "$(COM_MSG)"
 	@echo "\n"
 	git status
