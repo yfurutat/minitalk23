@@ -9,7 +9,7 @@ RM		:=	rm -rfv
 US		:=	300
 PD		:=	32767
 HFILE	:=	minitalk.h
-COM_MSG	:=	$'\ncommit through Makefile\n'
+COM_MSG	:=	\n commit through Makefile \n
 
 all		:	server client
 server	:
@@ -37,7 +37,7 @@ files	:
 commit	:
 	git status
 	git add $(S_SRC) $(C_SRC) $(UTL) $(HFILE) Makefile
-	git commit -m "$COM_MSG"
+	git commit -m "$(COM_MSG)"
 	git status
 	@echo '[git push] to complete'
 
