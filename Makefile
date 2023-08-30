@@ -39,7 +39,7 @@ commit	:
 	git add .
 	git commit -m "commit through Makefile"
 	git status
-	echo "\n'git push' to complete\n"
+	echo $"\n[git push] to complete\n"
 
 .PHONY	=	all server client clean fclean re \
 	files commit rdall rdre rdserver rdclient 
