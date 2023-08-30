@@ -8,6 +8,7 @@ CFLAGS	:=	-Wall -Wextra -Werror
 RM		:=	rm -rfv
 US		:=	300
 PD		:=	32767
+HFILE	:=	minitalk.h
 
 all		:	server client
 server	:
@@ -30,21 +31,22 @@ rdre	:	fclean rdall
 
 files	:
 	@mkdir utils srcs
-	@touch minitalk.h server.c client.c $(U_SRCS)
-	@mv server.c client.c srcs
-	@mv $(U_SRCS) utils
+	@touch $(HFILE) $(S_SRC) $(C_SRC) $(UTL)
 
 commit	:
 	git status
-	git add $(S_SRC) $(C_SRC) utils $(UTL) Makefile
+	git add $(S_SRC) $(C_SRC) $(UTL) $(HFILE) Makefile
 	git commit -m "commit through Makefile"
 	git status
-	echo '[git push] to complete'
+	@echo '[git push] to complete'
 
 .PHONY	=	all server client clean fclean re \
 	files commit rdall rdre rdserver rdclient 
 
 #	git add .
+#	@touch $(HFILE) server.c client.c $(U_SRCS)
+#	@mv server.c client.c srcs
+#	@mv $(U_SRCS) utils
 #	@touch error.c util.c outputs.c ft_atoi.c 
 #	@mkdir utils
 #	@mv * utils
