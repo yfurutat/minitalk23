@@ -37,7 +37,7 @@ files	:
 commit	:
 	git status
 	git add $(S_SRC) $(C_SRC) $(UTL) $(HFILE) Makefile
-	git commit -m "$(COM_MSG)"
+	@git commit -m "$(COM_MSG)" | echo "\n"
 	git status
 	@echo '[git push] to complete'
 
